@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.str-chat__channel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #c9e8c9, #b7e7bb);
+  height: 100%;
+}
+
+.str-chat__container {
+  max-width: 1200px;
+  width: 100%;
+  height: 80% !important;
+  margin: 0 auto !important;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.str-chat__list {
+  background-color: #ffffff;
+  padding: 12px;
+}
+
+.str-chat__list-notifications {
+  display: none;
+}
+
+.str-chat__message-input {
+  border-top: 1px solid #ddd;
+}
+
+/* Fallback image styling */
+.image-fallback {
+  opacity: 0.6;
+  filter: grayscale(100%);
+  border: 1px dashed #ccc;
+  padding: 4px;
+}
+
+.whatsapp-textarea {
+  padding: 10px 12px;
+  font-size: 16px;
+  line-height: 1.5;
+  resize: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #020202 !important; /* Forcing white text with !important */
+  background-color: white !important; /* Semi-transparent dark background */
+  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5); /* Adding text shadow for better visibility */
+}
+
+/* Add styles for the placeholder text to ensure it's also visible */
+.whatsapp-textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
